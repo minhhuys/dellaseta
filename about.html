@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Nhà hàng Della Seta &#8211; Pizza &amp; Steak<</title> <!--Favicon-->
+            <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+            <link rel="icon" href="images/favicon.png" type="image/x-icon">
+            <!-- Responsive -->
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+            <link href="layout.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- Main Header-->
+        <header class="main-header">
+
+        </header>
+        <!--End Main Header -->
+
+        <!--Page Title-->
+        <section class="page-title" style="background-image:url(images/background/6.jpg);">
+            <div class="auto-container">
+                <!-- <div class="title">Welcome</div> -->
+                <h2>Story</h2>
+            </div>
+        </section>
+        <!--End Page Title-->
+
+        <!--Table Section-->
+        <section class="table-section">
+            <div class="auto-container">
+
+            </div>
+        </section>
+        <!--End Table Section-->
+
+        <!--Carousel Section-->
+        <section class="carousel-section">
+            <div class="auto-container">
+                <div class="single-item-carousel owl-theme owl-carousel">
+
+                </div>
+            </div>
+        </section>
+        <!--End Carousel Section-->
+
+        <!--Unique Section-->
+        <section class="unique-section">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!--Column-->
+                    <div class="column col-md-3 col-sm-6 col-xs-12">
+                        <h2 class="">unique</h2>
+                    </div>
+                    <!--Column-->
+                    <div class="column col-md-9 col-sm-12 col-xs-12">
+                        <div class="text">Aenean sollicitudin, lorem quis bibendum aucsim elit consuat ipsum, nec
+                            sagittis nibhid elit. Duis sed odio sit amet nibh vulput ate sus a sit amet mauris. Morbi
+                            accumsa ipsum velit. Namec lus adio tincid ant auctor a ornare odioed nauris vitae era.
+                        </div>
+                    </div>
+                    <!--Column-->
+                    <!-- <div class="column col-md-3 col-sm-6 col-xs-12">
+                        <h3>Facts</h3>
+                        <div class="fact-text">17 months of surveying <br> 120 days of construction</div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!--End Unique Section-->
+
+        <!--Place Section-->
+        <section class="place-section" style="background-image:url(images/background/7.jpg);">
+            <div class="auto-container">
+
+            </div>
+        </section>
+        <!--End Place Section-->
+
+        <!--Team Section-->
+        <section class="team-section">
+            <div class="auto-container">
+                <!--Sec Title-->
+                <div class="sec-title centered">
+                    <div class="title">Magical Experience</div>
+                    <h2>The Team</h2>
+                </div>
+                <!--End Sec Title-->
+                <div class="row clearfix">
+                </div>
+                <hr>
+            </div>
+        </section>
+        <!--End Team Section-->
+
+        <!--Main Footer -->
+        <footer class="main-footer">
+        </footer>
+        <!--End Main Footer-->
+
+
+    </div>
+    <!--End pagewrapper-->
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-up"></span></div>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $.ajax({
+            url: "/_header.html",
+            async: false,
+            context: document.body
+        }).done(function (content) {
+            $(".main-header").html(content);
+        });
+        $.ajax({
+            url: "/_footer.html",
+            async: false,
+            context: document.body
+        }).done(function (content) {
+            $(".main-footer").html(content);
+        });
+    </script>
+    <script src="/js/UserDefine/about.js"></script>
+    <script>
+        About.init();
+    </script>
+
+</body>
+
+</html>

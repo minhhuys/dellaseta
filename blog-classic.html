@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Monde - Restaurant HTML Template | Blog Classic</title>
+
+
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+    <!-- Stylesheets -->
+    <link href="/layout.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- Main Header-->
+        <header class="main-header">
+
+        </header>
+        <!--End Main Header -->
+
+        <!--Page Title-->
+        <section class="page-title" id="bannerDetail" style="background-image:url(images/background/6.jpg);">
+            <div class="auto-container">
+                <div class="title">Đọc bài viết</div>
+                <h2>Blog</h2>
+            </div>
+        </section>
+        <!--End Page Title-->
+
+        <!--Sidebar Page Container-->
+        <div class="sidebar-page-container">
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <!--Content Side-->
+                    <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                        <!--Our Blog-->
+                        <div class="our-blog">
+
+                        </div>
+
+                        <!-- Styled Pagination -->
+                        <div class="styled-pagination">
+                            <form action="" id="getCode">
+                                <div class="form-group">
+                                    <label for="">Họ và tên</label>
+                                    <input type="text" name="username" class="form-control"
+                                        placeholder="Câu trả lời của bạn">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Sinh nhật</label>
+                                    <input type="date" name="dob" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Số điện thoại</label>
+                                    <input type="number" name="phone_number" class="form-control"
+                                        placeholder="Câu trả lời của bạn">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="email" name="email" class="form-control"
+                                        placeholder="Câu trả lời của bạn">
+                                </div>
+                                <div class="form-group">
+                                    <label>Khu vực đăng ký mã code</label>
+                                    <div>
+                                        <input type="radio" name="address" id="hoangquocviet" value="Hoàng Quốc Việt">
+                                        <label for="hoangquocviet">Della Seta Hoàng Quốc Việt</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="address" id="tranhuylieu" value="Trần Huy Liệu">
+                                        <label for="tranhuylieu">Della Seta Trần Huy Liệu</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div id="number_people">
+                                        <label>Số lượng người trong bàn tiệc đăng ký</label>
+                                        <div>
+                                            <input type="radio" name="number_people" id="six_people" value="6">
+                                            <label for="six_people">6 người</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="number_people" id="twelve_people" value="12">
+                                            <label for="twelve_people">12 người</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="text-center">
+                                <button class="btn btn-danger " onclick="Blog.submitFormGetCode()">Gửi thông
+                                    tin</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Sidebar Side-->
+                    <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                        <aside class="sidebar default-sidebar">
+
+                            <!-- About Widget -->
+                            <div class="sidebar-widget about-widget">
+                                <h2>About Our Restaurant</h2>
+                                <div class="content">
+                                    <div class="text">Aenean sollicitudin, lorem quis bibendum auctor elit consequat
+                                        ipsum, nec sagittis sem nibh id elit. Duised odio siamet nibh vulpu tate cursus
+                                        amet mauris. </div>
+                                    <div class="signature">Alen Remsi</div>
+                                </div>
+                            </div>
+
+                            <!-- Master Widget -->
+                            <div class="sidebar-widget master-widget">
+                                <div class="inner-box">
+                                    <h3>Masterclass</h3>
+                                    <div class="text">with Antuan Buchon</div>
+                                    <a href="#" class="theme-btn start-btn">Start Now</a>
+                                </div>
+                            </div>
+
+                            <!--Blog Category Widget-->
+                            <div class="sidebar-widget sidebar-blog-category">
+                                <h2>Categories</h2>
+                                <ul class="blog-cat">
+                                    <li><a href="#">Featured <span>(2)</span></a></li>
+                                    <li><a href="#">Recipes <span>(5)</span></a></li>
+                                    <li><a href="#">Mastercalss <span>(4)</span></a></li>
+                                    <li><a href="#">Videos <span>(1)</span></a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Popular Tags -->
+                            <div class="sidebar-widget popular-tags">
+                                <h2>Tags</h2>
+                                <a href="#">fresh</a>
+                                <a href="#">seafood</a>
+                                <a href="#">chef</a>
+                                <a href="#">Snap</a>
+                                <a href="#">Masterclass</a>
+                                <a href="#">Food</a>
+                            </div>
+
+                        </aside>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--End Sidebar Page Container-->
+
+        <!--Main Footer -->
+        <footer class="main-footer">
+        </footer>
+        <!--End Main Footer-->
+
+    </div>
+    <!--End pagewrapper-->
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-up"></span></div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/UserDefine/blog.js"></script>
+    <script>
+        $.ajax({
+            url: "/_header.html",
+            async: false,
+            context: document.body
+        }).done(function (content) {
+            $(".main-header").html(content);
+        });
+        $.ajax({
+            url: "/_footer.html",
+            async: false,
+            context: document.body
+        }).done(function (content) {
+            $(".main-footer").html(content);
+        });
+
+
+        var urlString = window.location.href;
+        var url = new URL(urlString);
+        var getID = url.searchParams.get('id');
+
+        Blog.initDetail(getID);
+        Blog.validateFormGetCode();
+        Blog.initSurvey();
+
+        jQuery.extend(jQuery.validator.messages, {
+            required: "Trường bắt buộc.",
+            remote: "Đã tồn tại.",
+            email: "Xin hãy nhập đúng định dạng Email.",
+            url: "Please enter a valid URL.",
+            date: "Please enter a valid date.",
+            dateISO: "Please enter a valid date (ISO).",
+            number: "Xin hãy nhập trường số.",
+            digits: "Vui lòng chỉ nhập số.",
+            creditcard: "Please enter a valid credit card number.",
+            equalTo: "Nhập lại mật khẩu không đúng",
+            accept: "Please enter a value with a valid extension.",
+            maxlength: jQuery.validator.format("Xin hãy không nhập quá {0} kí tự."),
+            minlength: jQuery.validator.format("Xin hãy nhập ít nhất là {0} kí tự."),
+            rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
+            range: jQuery.validator.format("Vui lòng nhập số trong khoảng {0} đến {1}."),
+            max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
+            min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
+        });
+    </script>
+
+</body>
+
+</html>

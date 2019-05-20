@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Monde - Restaurant HTML Template | Shop Single</title>
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery.bootstrap-touchspin.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- Main Header-->
+        <header class="main-header header-style-five">
+
+        </header>
+        <!--End Main Header -->
+
+        <!--Shop Single Section-->
+        <section class="shop-single-section">
+            <div class="auto-container">
+                <div class="page-tag"><span class="fa fa-home"></span> / <span id="product_name"></span></div>
+
+                <section class="product-details">
+
+                    <!--Basic Details-->
+                    <div class="basic-details">
+
+                    </div>
+                    <!--Basic Details-->
+
+                </section>
+
+                <!--Related Posts-->
+                <div class="related-posts">
+                    <h2>Có thể bạn cũng thích</h2>
+
+                    <div class="row clearfix">
+
+                        <!--Product Block-->
+                        <!-- <div class="product-block col-md-4 col-sm-6 col-xs-12">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <img src="images/resource/products/4.jpg" alt="" />
+                                    <div class="overlay-box">
+                                        <a href="shop-single.html" class="theme-btn btn-style-two">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="lower-box">
+                                    <h3><a href="shop-single.html">BISTRO</a></h3>
+                                    <div class="price">$15.00</div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!--Product Block-->
+                        <!-- <div class="product-block col-md-4 col-sm-6 col-xs-12">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <img src="images/resource/products/5.jpg" alt="" />
+                                    <div class="overlay-box">
+                                        <a href="shop-single.html" class="theme-btn btn-style-two">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="lower-box">
+                                    <h3><a href="shop-single.html">CHAMPIGNONS À L'AIL</a></h3>
+                                    <div class="price">$50.00</div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!--Product Block-->
+                        <!-- <div class="product-block col-md-4 col-sm-6 col-xs-12">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <img src="images/resource/products/6.jpg" alt="" />
+                                    <div class="overlay-box">
+                                        <a href="shop-single.html" class="theme-btn btn-style-two">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="lower-box">
+                                    <h3><a href="shop-single.html">SALMON RILLETTE</a></h3>
+                                    <div class="price">$25.00</div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!--End Shop Single Section-->
+
+        <!--Main Footer -->
+        <footer class="main-footer">
+        </footer>
+        <!--End Main Footer-->
+
+    </div>
+    <!--End pagewrapper-->
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-up"></span></div>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $.ajax({
+            url: "/_ex-header.html",
+            async: false,
+            context: document.body
+        }).done(function (content) {
+            $(".main-header").html(content);
+        });
+        $.ajax({
+            url: "/_footer.html",
+            async: false,
+            context: document.body
+        }).done(function (content) {
+            $(".main-footer").html(content);
+        });
+    </script>
+    <script src="/js/UserDefine/dish.js"></script>
+    <script>
+        var urlString = window.location.href;
+        var url = new URL(urlString);
+        var getID = url.searchParams.get('id');
+
+        Dish.dishDetail(getID);
+    </script>
+
+</body>
+
+</html>
